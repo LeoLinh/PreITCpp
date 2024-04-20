@@ -22,36 +22,36 @@ int main()
     }*/
 
  
-    // yêu cầu ng dùng nhập từ 1 đến 9 và in ra tiếng hán
+    /*yêu cầu ng dùng nhập từ 1 đến 9 và in ra tiếng hán
 
-    //int dichSoRaTiengHan;
+    int dichSoRaTiengHan;
 
-    //cout << "Nhap so o day : ";
-    //cin >> dichSoRaTiengHan;
+    cout << "Nhap so o day : ";
+    cin >> dichSoRaTiengHan;*/
 
-    //switch (dichSoRaTiengHan)
-    //{
-    //case 1: cout << "Nhat" << endl;
-    //    break;
-    //case 2: cout << "Nhi" << endl;
-    //    break;
-    //case 3: cout << "Tam" << endl;
-    //    break;
-    //case 4: cout << "Tu" << endl;
-    //    break;
-    //case 5: cout << "Ngu" << endl;
-    //    break;
-    //case 6: cout << "Luc" << endl;
-    //    break;
-    //case 7: cout << "That" << endl;
-    //    break;
-    //case 8: cout << "Bat" << endl;
-    //    break;
-    //case 9: cout << "Cuu" << endl;
-    //    break;
-    //case 10: cout << "Thap" << endl;
-    //    break;
-    //}
+    switch (dichSoRaTiengHan)
+    {
+    case 1: cout << "Nhat" << endl;
+        break;
+    case 2: cout << "Nhi" << endl;
+        break;
+    case 3: cout << "Tam" << endl;
+        break;
+    case 4: cout << "Tu" << endl;
+        break;
+    case 5: cout << "Ngu" << endl;
+        break;
+    case 6: cout << "Luc" << endl;
+        break;
+    case 7: cout << "That" << endl;
+        break;
+    case 8: cout << "Bat" << endl;
+        break;
+    case 9: cout << "Cuu" << endl;
+        break;
+    case 10: cout << "Thap" << endl;
+        break;
+    }
 
     /*int a, b;
     cout << "Bai toan : Nhap gia tri a va b sau do in ra gia tri lon nhat" << endl;
@@ -61,30 +61,30 @@ int main()
     cout << "Nhap gia tri b : ";
     cin >> b;*/
 
-    //if (a > b)
-    //{
-    //    cout << "So lon hon la : " << a;  
-    //}
-    //else if (a < b)
-    //{
-    //    cout << "So Nho hon la : " << b;
-    //}
-    //else
-    //{
-    //    cout << "Ca 2 so deu bang nhau";
-    //}
+    if (a > b)
+    {
+        cout << "So lon hon la : " << a;  
+    }
+    else if (a < b)
+    {
+        cout << "So Nho hon la : " << b;
+    }
+    else
+    {
+        cout << "Ca 2 so deu bang nhau";
+    }
 
-    // câu điều kiện 3 ngôi :
+     //câu điều kiện 3 ngôi :
     /*int c = (a > b) ? a : b;
     cout << "gia tri lon nhat la : " << c;*/
 
-    // vi du khac : 
+     //vi du khac : 
 
     /*string ketqua = (a % 2 == 0) ? "So chan" : "So le";
     cout << a << "La so" << ketqua << endl;*/
 
-    // ví dụ khác của câu điều kiện 2 ngôi : 
-    // a = a - 10 => a -= 10
+     //ví dụ khác của câu điều kiện 2 ngôi : 
+     a = a - 10 => a -= 10
 
     /*int a = 5;
     int b = 10;
@@ -93,7 +93,7 @@ int main()
     c = a++ + ++b + ++a - b-- + ++b;
     cout << "ket qua : " << c;*/
 
-    // Phép toán tử && : khác =
+     Phép toán tử && : khác =
 
    
 
