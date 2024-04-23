@@ -89,8 +89,8 @@ int main()
 
 	//cout << "tinh tien " << name << " = " << price * num << endl;
 
-	float toan, van, anh;
-	float diemTrungBinh;
+	//float toan, van, anh;
+	//float diemTrungBinh;
 	
 
 	/*cout << "Nhap diem Toan : ";
@@ -106,31 +106,59 @@ int main()
 	}*/
 
 	
-	cout << "Nhap diem Toan : ";
-	cin >> toan;
-	cout << "Nhap diem Van : ";
-	cin >> van;
-	cout << "Nhap diem Anh : ";
-	cin >> anh;
+	//cout << "Nhap diem Toan : ";
+	//cin >> toan;
+	//cout << "Nhap diem Van : ";
+	//cin >> van;
+	//cout << "Nhap diem Anh : ";
+	//cin >> anh;
 
-	diemTrungBinh = (toan + van + anh) / 3.0;
+	//diemTrungBinh = (toan + van + anh) / 3.0;
 
-	// Xác định xếp loại
-	char xepLoai = 
-		(diemTrungBinh >= 8.5) ? 'A' :
-		(diemTrungBinh >= 6.5 && diemTrungBinh <= 8.49) ? 'B' :
-		(diemTrungBinh >= 5 && diemTrungBinh <= 6.49) ? 'C' :
-		(diemTrungBinh >= 3.5 && diemTrungBinh <= 4.99) ? 'D' : 'F';
+	//// Xác định xếp loại
+	//char xepLoai = 
+	//	(diemTrungBinh >= 8.5) ? 'A' :
+	//	(diemTrungBinh >= 6.5 && diemTrungBinh <= 8.49) ? 'B' :
+	//	(diemTrungBinh >= 5 && diemTrungBinh <= 6.49) ? 'C' :
+	//	(diemTrungBinh >= 3.5 && diemTrungBinh <= 4.99) ? 'D' : 'F';
 
-	// Xuất thông tin xếp loại
-	cout << "Sinh vien xep loai: " << xepLoai << endl;
+	//// Xuất thông tin xếp loại
+	//cout << "Sinh vien xep loai: " << xepLoai << endl;
+
+	// Bài 5.7 : 
+	//double toan;
+	//cout << "Nhap diem toan: ";
+	//cin >> toan;
+
+	//int lamtron = toan;
+	//double phanle = toan - lamtron;
+
+	//cout << "diem lam tron: " << lamtron << endl;
+	//cout << "diem le: " << phanle << endl;
+
+	//if (phanle < 0.25)
+	//{
+	//	cout << "diem = " << lamtron;
+	//}
+	//else if (phanle <= 0.5)
+	//{
+	//	cout << "diem = " << lamtron + 0.5;
+	//}
+	//else
+	//{
+	//	cout << "diem = " << 1 + lamtron;
+	//}
+	//--------------------------------------
+
+	////////// bài mới PreIT-6 : 
 
 	
 
 
 
-	cin.get();
-	cin.get();
+
+
+	
 
 
     return 0;
