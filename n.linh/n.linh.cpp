@@ -24,12 +24,12 @@ int main()
  
     /*yêu cầu ng dùng nhập từ 1 đến 9 và in ra tiếng hán
 
-    int dichSoRaTiengHan;
+    //int dichSoRaTiengHan;
 
-    cout << "Nhap so o day : ";
-    cin >> dichSoRaTiengHan;*/
+    //cout << "Nhap so o day : ";
+    //cin >> dichSoRaTiengHan;*/
 
-    switch (dichSoRaTiengHan)
+    /*switch (dichSoRaTiengHan)
     {
     case 1: cout << "Nhat" << endl;
         break;
@@ -51,7 +51,7 @@ int main()
         break;
     case 10: cout << "Thap" << endl;
         break;
-    }
+    }*/
 
     /*int a, b;
     cout << "Bai toan : Nhap gia tri a va b sau do in ra gia tri lon nhat" << endl;
@@ -61,7 +61,7 @@ int main()
     cout << "Nhap gia tri b : ";
     cin >> b;*/
 
-    if (a > b)
+    /*if (a > b)
     {
         cout << "So lon hon la : " << a;  
     }
@@ -72,7 +72,7 @@ int main()
     else
     {
         cout << "Ca 2 so deu bang nhau";
-    }
+    }*/
 
      //câu điều kiện 3 ngôi :
     /*int c = (a > b) ? a : b;
@@ -84,7 +84,7 @@ int main()
     cout << a << "La so" << ketqua << endl;*/
 
      //ví dụ khác của câu điều kiện 2 ngôi : 
-     a = a - 10 => a -= 10
+    /* a = a - 10 => a -= 10*/
 
     /*int a = 5;
     int b = 10;
@@ -93,7 +93,7 @@ int main()
     c = a++ + ++b + ++a - b-- + ++b;
     cout << "ket qua : " << c;*/
 
-     Phép toán tử && : khác =
+    
 
    
 
