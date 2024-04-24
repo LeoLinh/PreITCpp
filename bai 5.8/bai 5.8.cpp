@@ -114,12 +114,98 @@ int main()
 	}*/
 
 
-	// Bài 5.5 : Viết chương trình cho phép người dùng nhập vào 1 ký tự bảng chữ
-	// cái.Xác định chữ cái nhập vào là viết hoa hay viết thường.
+	 // Bài 5.5 : Viết chương trình cho phép người dùng nhập vào 1 ký tự bảng chữ
+	 // cái.Xác định chữ cái nhập vào là viết hoa hay viết thường.
 
+	/*char kyTu;
+	cout << "Nhap ky tu : ";
+	cin >> kyTu;
+
+	if (kyTu >= 'A' && kyTu <= 'Z')
+	{
+		cout << "Day la chu viet hoa" << endl;
+	}
+	else if (kyTu >= 'a' && kyTu <= 'z')
+	{
+		cout << " Day la chu viet thuong" << endl;
+	}*/
+
+	// Bài 5.6 : Viết chương trình nhập vào 3 số. Kiểm tra và in ra số có giá trị lớn
+	// nhất trong 3 số
+
+	/*int a, b, c, max;
+
+	cout << "Nhap gia tri a : ";
+	cin >> a;
+	cout << "Nhap gia tri b : ";
+	cin >> b;
+	cout << "Nhap gia tri c : ";
+	cin >> c;
+	max = a;
+
+	if (b > max)
+	{
+		max = b;
+	}
+	if (c > max)
+	{
+		max = c;
+	}
+	cout << "So lon nhat la : " << max << endl;*/
+
+	// Bài 5.7 : Viết chương trình nhập vào 3 điểm toán, văn, anh của 1 sinh viên .
+	// Sau đó tính điểm trung bình và cho biết sinh viên đó xếp loại gì ? Biết rằng, xếp loại
+	//dựa trên thang điểm sau :
+
+	/*float toan, van, anh;
+	float diemTrungBinh;
+
+	cout << "Nhap diem Toan : ";
+	cin >> toan;
+	cout << "Nhap diem Van : ";
+	cin >> van;
+	cout << "Nhap diem Anh : ";
+	cin >> anh;
+
+	diemTrungBinh = (toan + van + anh) / 3;
+
+	if (diemTrungBinh > 8.5)
+	{
+		cout << "Xep loai A" << endl;
+	}
+	else if ((diemTrungBinh >= 6.5) && (diemTrungBinh <= 8.49))
+	{
+		cout << "xep loai B";
+	}*/
 	
+	// Bài 5.8 : Viết chương trình nhập vào điểm thi. Làm tròn điểm có phần lẻ và
+	// xuất kết quả theo quy tắc sau :
+
+	double toan;
+	cout << "Nhap diem toan: ";
+	cin >> toan;
+
+	int lamtron = toan;
+	double phanle = toan - lamtron;
+
+	cout << "diem lam tron: " << lamtron << endl;
+	cout << "diem le: " << phanle << endl;
+
+	if (phanle < 0.25)
+	{
+		cout << "diem = " << lamtron;
+	}
+	else if (phanle <= 0.5)
+	{
+		cout << "diem = " << lamtron + 0.5;
+	}
+	else
+	{
+		cout << "diem = " << 1 + lamtron;
+	}
+	
+	// Bài 5.9 : 
 
 
-
-	return 0;
+	return 0; 
 }
