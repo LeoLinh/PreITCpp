@@ -67,7 +67,7 @@ int main()
 	}*/
 
 	// Bài 5.2 : Viết chương trình kiểm tra năm nhập vào có phải năm nhuận hay không.
-	int namNhuan;
+	/*int namNhuan;
 	cout << "Hay nhap so nam o day : ";
 	cin >> namNhuan;
 	if (namNhuan % 400 == 0 || namNhuan % 4 == 0 && namNhuan % 100 != 0 )
@@ -76,13 +76,48 @@ int main()
 	}
 	else
 	{
-		cout << "=> khong phai la nam nhuan" << endl;;
+		cout << "=> khong phai la nam nhuan" << endl;
+	}*/
+
+	// Bài 5.3 : Viết chương trình kiểm tra số nguyên N do người dùng nhập vào là
+	// số chẵn hay số lẻ.
+
+	/*int soNguyen;
+	cout << "Nhap so nguyen : ";
+	cin >> soNguyen;
+
+	if (soNguyen % 2 == 0)
+	{
+		cout << "So chan" << endl;
 	}
+	else
+	{
+		cout << "So le" << endl;
+	}*/
+
+	// bài 5.4 : Viết chương trình cho phép người dùng nhập 2 số a và b. Kiểm tra
+	// số a có chia hết cho số b hay không và xuất kết luận tương ứng.
+
+	/*int a, b;
+	cout << "Nhap gia tri a : ";
+	cin >> a;
+	cout << "Nhap gia tri b : ";
+	cin >> b;
+
+	if (a % b == 0)
+	{
+		cout << a << " Chia het cho " << b << endl;
+	}
+	else
+	{
+		cout << a << " Khong chia het cho " << b << endl;
+	}*/
 
 
+	// Bài 5.5 : Viết chương trình cho phép người dùng nhập vào 1 ký tự bảng chữ
+	// cái.Xác định chữ cái nhập vào là viết hoa hay viết thường.
 
-
-
+	
 
 
 
