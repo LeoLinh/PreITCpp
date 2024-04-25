@@ -212,7 +212,8 @@ int main()
 
 	cout << "Thap nien cong tac : ";
 	cin >> TNCT;
-	
+
+
 	if (TNCT < 12)
 	{
 		heSo = 1.92;
@@ -230,44 +231,44 @@ int main()
 		heSo = 4.5;
 	}
 
-	int tinhLuongCoBan = heSo * luongCoBan;
+	int tinhLuong = heSo * luongCoBan;
 
-	cout << "Luong co ban dua theo TNCT : " << tinhLuongCoBan << endl;*/
+	cout << "Luong co ban dua theo TNCT : " << tinhLuong << endl;*/
 
 	// Bài 5.10 : Tính tiền đi taxi từ số km đã được nhập vào
 
-	//int soKm, tongTien;
-	//cout << "Nhap so Km : ";
-	//cin >> soKm;
+	int soKm, tongTien;
+	cout << "Nhap so Km : ";
+	cin >> soKm;
 
-	//if (soKm == 1)
-	//{
-	//	tongTien = 15000;
-	//	//cout << "Tong tien = " << tongTien;
-	//}
-	//else if (soKm >= 2 && soKm <= 5)
-	//{
-	//	tongTien = 15000 + (soKm - 1) * 13500;
-	//	//cout << "Tong tien = " << tongTien;
-	//}
-	//else if (soKm >= 6)
-	//{
-	//	tongTien = 15000 + (4 * 13500) + (soKm - 5) * 11000;
-	//	//cout << "Tong tien = " << tongTien;
-	//}
-	//if (soKm >= 20)
-	//{
-	//	float giamGia = tongTien * 0.1;
-	//	tongTien -= giamGia;
-	//	//cout << "Tong tien = " << tongTien << endl;
-	//}
-	//cout << "Tong tien di Taxi la : " << tongTien << endl;
+	if (soKm == 1)
+	{
+		tongTien = 15000;
+		cout << "Tong tien = " << tongTien;
+	}
+	else if (soKm >= 2 && soKm <= 5)
+	{
+		tongTien = 15000 + (soKm - 1) * 13500;
+		cout << "Tong tien = " << tongTien;
+	}
+	else if (soKm >= 6)
+	{
+		tongTien = 15000 + (4 * 13500) + (soKm - 5) * 11000;
+		cout << "Tong tien = " << tongTien;
+	}
+	if (soKm >= 20)
+	{
+		float giamGia = tongTien * 0.1;
+		tongTien -= giamGia;
+		cout << "Tong tien = " << tongTien << endl;
+	}
+	cout << "Tong tien di Taxi la : " << tongTien << endl;
 
 	// Bài 5.11 : Nhập vào 3 số nguyên dương. Kiểm tra xem 3 số đó có lập thành
 	//tam giác không ? Nếu có hãy cho biết tam giác đó là tam giác đều, cân, vuông cân,
 	//vuông hay là tam giác thường
 
-	int a, b, c;
+	/*int a, b, c;
 	
 	cout << "Nhap canh a : ";
 	cin >> a;
@@ -295,7 +296,7 @@ int main()
 		{
 			cout << " => Tam giac can" << endl;
 		}
-	}
+	}*/
 	// đến đoạn này khó.
 	
 	

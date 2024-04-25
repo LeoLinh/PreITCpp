@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include <string.h>
+//Khai báo struct
+struct Product
+{
+char ID[10];
+char Name[50];
+int Amount;
+int Price;
+};
+//Khai báo các hàm nguyên mẫu (prototype)
+void InputProduct(Product prds[], int &number);
+void OutputProduct(Product prd);
+void OutputList(Product prds[], int number);
+void LookUp(Product prds[], int number);
+void main()
+{
+int Number;
+Product Store[20];
+InputProduct(Store, Number);
+OutputList(Store, Number);
+LookUp(Store, Number);
+}
+//Xây dựng hàm nhập sản phẩm
+void InputProduct(Product prds[], int &number)
+{
+printf(“Moi nhap so luong SP: ”);
+scanf(“%d”,&number);
+for(int i=0; i<number; i++)
+{
+printf(“Nhap san pham thu %d\n”, i+1);
+fflush(stdin); //Lệnh xoá bộ nhớ đệm, tránh tình trạng lệnh bị trôi.
+printf(“Ma hang hoa: ”); scanf(“%s”, &prds[i].ID);
+printf(“Ten hang hoa: ”); gets(prds[i].Name);
+printf(“So luong: ”); scanf(“%d”, &prds[i].Amount);
+printf(“Gia tien: ”); scanf(“%f”,&prds[i].Price);
+}
+}
+//Xây dựng hàm xuất thông tin một sản phẩm
+void OutputProduct(Product prd)
+{
+printf(“%s-%s-%d-%d\n”, prd.ID, prd.Name, prd.Amount, prd.Price);
+}Cấu trúc  113
+//Xây dựng hàm xuất thông tin danh sách tất cả sản phẩm
+void OutputList(Product prds[], int number)
+{
+printf(“DANH SACH SAN PHAM\n”);
+printf(“MaSP-TenSP-Soluong-Gia\n”);
+for(int i=0; i<number; i++)
+{
+OutputProduct(prds[i]);
+}
+}
+//Xây dựng hàm tra cứu thông tin sản phẩm
+void LookUp(Product prds[], int number)
+{
+char ID[10];
+int isFound=0;
+printf(“Moi nhap ma SP can tra cuu: ”);
+scanf(“%s”,&ID);
+for(int i=0; i<number; i++)
+{
+int result = stricmp(ID, prds[i].ID);
+if(result == 0)
+{
+isFound = 1;
+OutputProduct(prds[i]);
+}
+}
+if(isFound==0)
+{
+printf(“Khong tim thay”);
+}
+}
