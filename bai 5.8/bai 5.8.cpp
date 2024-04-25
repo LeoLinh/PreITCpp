@@ -181,7 +181,7 @@ int main()
 	// Bài 5.8 : Viết chương trình nhập vào điểm thi. Làm tròn điểm có phần lẻ và
 	// xuất kết quả theo quy tắc sau :
 
-	double toan;
+	/*double toan;
 	cout << "Nhap diem toan: ";
 	cin >> toan;
 
@@ -202,10 +202,42 @@ int main()
 	else
 	{
 		cout << "diem = " << 1 + lamtron;
-	}
+	}*/
 	
-	// Bài 5.9 : 
+	// Bài 5.9 : Viết chương trình tính lương của nhân viên dựa theo thâm niên
+	// công tác(TNCT) được nhập vào.
 
+	/*int heSo, TNCT;
+	int luongCoBan = 650000;
+
+	cout << "Thap nien cong tac : ";
+	cin >> TNCT;
+	
+	if (TNCT < 12)
+	{
+		heSo = 1.92;
+	}
+	else if (12 <= TNCT && TNCT < 36)
+	{
+		heSo = 2.34;
+	}
+	else if (36 <= TNCT && TNCT < 60)
+	{
+		heSo = 3;
+	}
+	else if (TNCT >= 60)
+	{
+		heSo = 4.5;
+	}
+
+	int tinhLuongCoBan = heSo * luongCoBan;
+
+	cout << "Luong co ban dua theo TNCT : " << tinhLuongCoBan << endl;*/
+
+	// Bài 10 : Tính tiền đi taxi từ số km đã được nhập vào
+
+	// Chưa làm được.
+	
 
 	return 0; 
 }
