@@ -297,7 +297,7 @@ int main()
 			cout << " => Tam giac can" << endl;
 		}
 	}*/
-	// đến đoạn này khó.
+	
 	
 	
 	
