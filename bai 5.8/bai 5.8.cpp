@@ -296,7 +296,7 @@ int main()
 			cout << " => Tam giac can" << endl;
 		}
 	}
-	// đến đoạn này không hiểu nổi ...
+	// đến đoạn này khó...
 	
 	
 	
