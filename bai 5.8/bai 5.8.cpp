@@ -234,9 +234,71 @@ int main()
 
 	cout << "Luong co ban dua theo TNCT : " << tinhLuongCoBan << endl;*/
 
-	// Bài 10 : Tính tiền đi taxi từ số km đã được nhập vào
+	// Bài 5.10 : Tính tiền đi taxi từ số km đã được nhập vào
 
-	// Chưa làm được.
+	//int soKm, tongTien;
+	//cout << "Nhap so Km : ";
+	//cin >> soKm;
+
+	//if (soKm == 1)
+	//{
+	//	tongTien = 15000;
+	//	//cout << "Tong tien = " << tongTien;
+	//}
+	//else if (soKm >= 2 && soKm <= 5)
+	//{
+	//	tongTien = 15000 + (soKm - 1) * 13500;
+	//	//cout << "Tong tien = " << tongTien;
+	//}
+	//else if (soKm >= 6)
+	//{
+	//	tongTien = 15000 + (4 * 13500) + (soKm - 5) * 11000;
+	//	//cout << "Tong tien = " << tongTien;
+	//}
+	//if (soKm >= 20)
+	//{
+	//	float giamGia = tongTien * 0.1;
+	//	tongTien -= giamGia;
+	//	//cout << "Tong tien = " << tongTien << endl;
+	//}
+	//cout << "Tong tien di Taxi la : " << tongTien << endl;
+
+	// Bài 5.11 : Nhập vào 3 số nguyên dương. Kiểm tra xem 3 số đó có lập thành
+	//tam giác không ? Nếu có hãy cho biết tam giác đó là tam giác đều, cân, vuông cân,
+	//vuông hay là tam giác thường
+
+	int a, b, c;
+	
+	cout << "Nhap canh a : ";
+	cin >> a;
+	cout << "Nhap canh b : ";
+	cin >> b;
+	cout << "Nhap canh c : ";
+	cin >> c;
+
+	if (a + b > c && a + c > b && b + c > a)
+	{
+		cout << "Co the lap thanh tam giac" << endl;
+	}
+
+	if (a == b && b == c && c == a)
+	{
+		cout << " => Tam giac deu" << endl;
+	}
+	else if (a == b || a == c || b == c )
+	{
+		if (a * a == b * b + c * c || b * b == a * a + c * c || c * c == a * a + b * b)
+		{
+			cout << " => Tam giac vuong can" << endl;
+		}
+		else
+		{
+			cout << " => Tam giac can" << endl;
+		}
+	}
+	// đến đoạn này không hiểu nổi ...
+	
+	
 	
 
 	return 0; 
