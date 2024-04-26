@@ -76,7 +76,7 @@ int main()
     cout << "Phep tinh 3: S7 = " << S7 << endl;
 
 
-    ////// Bài tập 6.5 : 
+    ////// Bài tập 6.5 : .
 
     int N;
     cout << "Nhap so nguyen N : ";
