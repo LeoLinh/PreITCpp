@@ -70,7 +70,7 @@ int main()
         S7 += 1.0 / (2 * i + 1);
     }
 
-    // Hiển thị kết quả
+    
     cout << "Phep tinh 1: S5 = " << S5 << endl;
     cout << "Phep tinh 2: S6 = " << S6 << endl;
     cout << "Phep tinh 3: S7 = " << S7 << endl;
@@ -78,20 +78,9 @@ int main()
 
     ////// Bài tập 6.5 : .
 
-    int N;
-    cout << "Nhap so nguyen N : ";
-    cin >> N;
+    
 
-    int s8 = 0;
-    int tinhGiaiThua(int n)
-    {
-        int giaiThua = 1;
-        for (int i = 1; i <= n; ++i) 
-        {
-            giaiThua *= i;
-        }
-        return giaiThua;
-    }
+    
 
 
     return 0;
