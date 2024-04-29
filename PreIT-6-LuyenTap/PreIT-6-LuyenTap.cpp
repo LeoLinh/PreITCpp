@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    /*int a, b, min, max, sub;
+    int a, b, min, max, sub;
 
     cout << "nhap a : ";
     cin >> a;
@@ -18,9 +18,9 @@ int main()
     {
         cout << "Khong hop le";
         
-    }*/
+    }
 
-    /*cout << endl << "Uoc so cua a : ";
+    cout << endl << "Uoc so cua a : ";
     for (int i = 1; i <= a; i++)
     {
         if (a % i == 0)
@@ -45,7 +45,7 @@ int main()
         {
             cout << i << " ; ";
         }
-    }*/
+    }
 
     // mẫu :
     //for (int i = a > b ? b : a; i >= 2; i--)
@@ -74,37 +74,37 @@ int main()
 
     // Bài 6.12 :
 
-    int n;
-    cout << "Nhap do dai canh hinh vuong : ";
-    cin >> n;
+    //int n;
+    //cout << "Nhap do dai canh hinh vuong : ";
+    //cin >> n;
 
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            cout << "* ";
-        }
-        cout << endl;
-    }
+    //for (int i = 0; i < n; i++)
+    //{
+    //    for (int j = 0; j < n; j++)
+    //    {
+    //        cout << "* ";
+    //    }
+    //    cout << endl;
+    //}
 
-    cout << endl;
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            //cout << "* ";
-            if ((i == 1) || (i == (n - 1)) && j == 1 || j == (n - 1))
-            {
-                cout << "* ";
-            }
-            else 
-            {
-                cout << "  ";
-            }
-            
-        }
-        cout << endl;
-    }
+    //cout << endl;
+    //for (int i = 0; i < n; i++)
+    //{
+    //    for (int j = 0; j < n; j++)
+    //    {
+    //        //cout << "* ";
+    //        if ((i == 1) || (i == (n - 1)) && j == 1 || j == (n - 1))
+    //        {
+    //            cout << "* ";
+    //        }
+    //        else 
+    //        {
+    //            cout << "  ";
+    //        }
+    //        
+    //    }
+    //    cout << endl;
+    //}
 
     // Bài 
 
