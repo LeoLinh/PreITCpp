@@ -25,6 +25,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PreIT-6-BaiTap.4", "PreIT-6
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PreIT-6-BaiTap.5", "PreIT-6-BaiTap.5\PreIT-6-BaiTap.5.vcxproj", "{5A145CE3-B04D-458B-9FF0-44FD7505756F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PreIT-6-BaiTap.6", "PreIT-6-BaiTap.6\PreIT-6-BaiTap.6.vcxproj", "{23B02162-39D8-40CC-8E56-0AE58753E314}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PreIT-6-BaiTap.7", "PreIT-6-BaiTap.7\PreIT-6-BaiTap.7.vcxproj", "{379E2186-B949-48BF-9BCC-6849DFDFA4BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +125,22 @@ Global
 		{5A145CE3-B04D-458B-9FF0-44FD7505756F}.Release|x64.Build.0 = Release|x64
 		{5A145CE3-B04D-458B-9FF0-44FD7505756F}.Release|x86.ActiveCfg = Release|Win32
 		{5A145CE3-B04D-458B-9FF0-44FD7505756F}.Release|x86.Build.0 = Release|Win32
+		{23B02162-39D8-40CC-8E56-0AE58753E314}.Debug|x64.ActiveCfg = Debug|x64
+		{23B02162-39D8-40CC-8E56-0AE58753E314}.Debug|x64.Build.0 = Debug|x64
+		{23B02162-39D8-40CC-8E56-0AE58753E314}.Debug|x86.ActiveCfg = Debug|Win32
+		{23B02162-39D8-40CC-8E56-0AE58753E314}.Debug|x86.Build.0 = Debug|Win32
+		{23B02162-39D8-40CC-8E56-0AE58753E314}.Release|x64.ActiveCfg = Release|x64
+		{23B02162-39D8-40CC-8E56-0AE58753E314}.Release|x64.Build.0 = Release|x64
+		{23B02162-39D8-40CC-8E56-0AE58753E314}.Release|x86.ActiveCfg = Release|Win32
+		{23B02162-39D8-40CC-8E56-0AE58753E314}.Release|x86.Build.0 = Release|Win32
+		{379E2186-B949-48BF-9BCC-6849DFDFA4BF}.Debug|x64.ActiveCfg = Debug|x64
+		{379E2186-B949-48BF-9BCC-6849DFDFA4BF}.Debug|x64.Build.0 = Debug|x64
+		{379E2186-B949-48BF-9BCC-6849DFDFA4BF}.Debug|x86.ActiveCfg = Debug|Win32
+		{379E2186-B949-48BF-9BCC-6849DFDFA4BF}.Debug|x86.Build.0 = Debug|Win32
+		{379E2186-B949-48BF-9BCC-6849DFDFA4BF}.Release|x64.ActiveCfg = Release|x64
+		{379E2186-B949-48BF-9BCC-6849DFDFA4BF}.Release|x64.Build.0 = Release|x64
+		{379E2186-B949-48BF-9BCC-6849DFDFA4BF}.Release|x86.ActiveCfg = Release|Win32
+		{379E2186-B949-48BF-9BCC-6849DFDFA4BF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

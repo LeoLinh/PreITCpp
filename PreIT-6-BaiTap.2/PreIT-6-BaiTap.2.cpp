@@ -77,30 +77,7 @@ int main()
     return 0;
 }
 
-#include <iostream>
-using namespace std;
 
-int main()
-{
-    int chieuDai, chieuRong;
-    cout << "Nhap chieu dai : ";
-    cin >> chieuDai;
-    cout << "Nhap chieu rong : ";
-    cin >> chieuRong;
-
-    for (int i = 0; i < chieuDai; i++)
-    {
-        if (int j = 0; j < chieuRong; j++)
-        {
-            cout << "* ";
-        }
-        cout << endl;
-    }
-
-
-
-    return 0;
-}
 
 
 

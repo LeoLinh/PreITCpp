@@ -25,16 +25,7 @@ int main()
         cout << endl;
     }*/
     
-    char a;
-
-    for (a = 65; a <= 90; a++)
-    {
-        cout << " " << a;
-        if (int a = 65; a <= 90 )
-        {
-
-        }
-    }
+    
     
 
 }
