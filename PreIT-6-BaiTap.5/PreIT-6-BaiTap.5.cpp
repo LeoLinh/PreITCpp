@@ -7,6 +7,8 @@ using namespace std;
 
 int main()
 {
+    // Hình 16 : 
+
     int chieuCao;
     cout << "Nhap chieu cao : ";
     cin >> chieuCao;
@@ -15,28 +17,25 @@ int main()
     {
         for (int j = 0; j <= i; j++) 
         {
-            cout << "* ";
+            cout << j + 1 << " ";
         }
-        cout << endl;
+        cout << endl; 
     }
     cout << endl;
 
-    for (int i = 0; i < chieuCao; i++) {
-        // Vòng lặp in ra dấu bất kỳ cho từng cột của hàng hiện tại
-        for (int j = 0; j <= i; j++) {
-            // Kiểm tra nếu đang ở hàng cuối cùng hoặc ở cột đầu tiên hoặc cuối cùng của hàng
-            if (i == chieuCao - 1 || j == 0 || j == i) {
-                cout << "* ";
-            }
-            else {
-                cout << "  "; // In ra khoảng trắng nếu không phải là điều kiện trên
-            }
+    // Hình 17 : 
+
+    for (int i = chieuCao; i >= 1; i--) 
+    {
+        for (int j = 1; j <= i; j++) 
+        {
+            cout << j << " ";
         }
-        cout << endl; // Xuống dòng sau khi in hết các ký tự của hàng
+        cout << endl; 
     }
 
-    
 
     return 0;
+    
 }
 
