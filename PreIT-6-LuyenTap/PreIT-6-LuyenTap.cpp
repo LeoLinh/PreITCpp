@@ -7,108 +7,174 @@ using namespace std;
 
 int main()
 {
-    int a, b, min, max, sub;
+	// Hình 10 : 
+	int n;
+	cout << "Nhap canh : ";
+	cin >> n;
 
-    cout << "nhap a : ";
-    cin >> a;
-    cout << "nhap b : ";
-    cin >> b;
+	int i = 0;
+	/*while (i < n)
+	{
+		int j = 0;
+		while (j < n)
+		{
+			cout << "* ";
+			j++;
+		}
+		cout << endl;
+		i++;
+	}*/
 
-    if (a <= 0 || b <= 0)
-    {
-        cout << "Khong hop le";
-        
-    }
+	// ví dụ 2 : Chỉ cần 1 vòng lặp
+	int nn = n * n;
+	i = 1;
+	while (i <= nn)
+	{
+		cout << "* ";
+		if (i % n == 0)
+		{
+			cout << endl;
+		}
+		i++;
+	}
 
-    cout << endl << "Uoc so cua a : ";
-    for (int i = 1; i <= a; i++)
-    {
-        if (a % i == 0)
-        {
-            cout << i << " ; ";
-        }
-    }
+	cout << endl;
 
-    cout << endl << "Uoc so cua b : ";
-    for (int i = 1; i <= b; i++)
-    {
-        if (b % i == 0)
-        {
-            cout << i << " ; ";
-        }
-    }
+	// Hình 11 : 
 
-    cout << endl << "Tat ca uoc chung : ";
-    for (int i = 1; i<= a && i <= b; i++)
-    {
-        if (a % i == 0 && b % i == 0)
-        {
-            cout << i << " ; ";
-        }
-    }
+	i = 0;
+	/*while (i < n)
+	{
+		int j = 0;
+		while (j < n)
+		{
+			if (i == 0 || i == n - 1 || j == 0 || j == n - 1)
+			{
+				cout << "* ";
+			}
+			else
+			{
+				cout << "  ";
+			}
+			j++;
+		}
+		i++;
+		cout << endl;
+	}*/
 
-    // mẫu :
-    //for (int i = a > b ? b : a; i >= 2; i--)
-    //{
-    //    if (a % i == 0 && b % i == 0)
-    //    {
-    //        cout << "UCLN cua " << a << " va " << b << " la " << i << endl;
-    //        
-    //    }
-    //}
+	// ví dụ : chỉ dùng 1 while
+	while (i < nn)
+	{
+		int hangNgang = i / n;
+		int hangDoc = i % n;
 
-    //cout << endl;
+		if (hangNgang == 0 || hangNgang == n - 1 || hangDoc == 0 || hangDoc == n - 1)
+		{
+			cout << "* ";
+		}
 
-    //// giải mẫu :
-    //while (a != b)
-    //{
-    //    max = (a > b) ? a : b;
-    //    min = (a > b) ? b : a;
-    //    sub = max - min;
+		else
+		{
+			cout << "  ";
+		}
 
-    //    a = min;
-    //    b = sub;
-    //}
-    //cout << "UCLN : " << a;
-    /////////////////
+		if (hangDoc == n - 1)
+		{
+			cout << endl;
+		}
+		i++;
+	}
+	cout << endl;
 
-    // Bài 6.12 :
+	// hình 12 : 
+	cout << "hinh 12 : " << endl;
+	int chieuDai, chieuRong;
+	cout << "Nhap chieu dai : ";
+	cin >> chieuDai;
+	cout << "Nhap chieu rong : ";
+	cin >> chieuRong;
 
-    //int n;
-    //cout << "Nhap do dai canh hinh vuong : ";
-    //cin >> n;
+	i = 0;
+	while (i < chieuDai)
+	{
+		int j = 0;
+		while (j < chieuRong)
+		{
+			cout << "* ";
+			j++;
+		}
+		cout << endl;
+		i++;
+	}
+	cout << endl;
 
-    //for (int i = 0; i < n; i++)
-    //{
-    //    for (int j = 0; j < n; j++)
-    //    {
-    //        cout << "* ";
-    //    }
-    //    cout << endl;
-    //}
+	// Hình 13 :
+	cout << " Hinh 13 : " << endl;
+	i = 0;
+	while (i < chieuDai)
+	{
+		int j = 0;
+		while (j < chieuRong)
+		{
+			if (i == 0 || i == chieuDai - 1 || j == 0 || j == chieuRong - 1)
+			{
+				cout << "* ";
+			}
+			else
+			{
+				cout << "  ";
+			}			
+			j++;	
+		}
+		cout << endl;
+		i++;
+	}
 
-    //cout << endl;
-    //for (int i = 0; i < n; i++)
-    //{
-    //    for (int j = 0; j < n; j++)
-    //    {
-    //        //cout << "* ";
-    //        if ((i == 1) || (i == (n - 1)) && j == 1 || j == (n - 1))
-    //        {
-    //            cout << "* ";
-    //        }
-    //        else 
-    //        {
-    //            cout << "  ";
-    //        }
-    //        
-    //    }
-    //    cout << endl;
-    //}
+	// Hình 12 : chỉ dùng 1 vòng While
+	cout << "Hinh 12 : chi dung 1 vong While" << endl;
 
-    // Bài 
+	int count = 0;
 
-    return 0;
+	while (count < chieuDai * chieuRong)
+	{
+		cout << "* ";
+		if ((count + 1) % chieuRong == 0)
+		{
+			cout << endl;
+		}
+		count++;
+	}
+	cout << endl;
+
+	// Hình 13 : chỉ dùng 1 vòng While
+	cout << "Hinh 13 : chi dung 1 vong While" << endl;
+
+	while (i < chieuDai * chieuRong)
+	{
+		int CD = i / chieuDai;
+		int CR = i % chieuRong;
+
+		if (CD == 0 || CD == chieuDai - 1 || CR == 0 || CR == chieuRong - 1)
+		{
+			cout << "* ";
+		}
+
+		else
+		{
+			cout << "  ";
+		}
+
+		if (CD == chieuDai - 1)
+		{
+			cout << endl;
+		}
+		i++;
+	}
+	cout << endl;
+
+
+
+	return 0;
 }
 
 
