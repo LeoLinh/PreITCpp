@@ -11,37 +11,35 @@ int main()
     cout << "Nhap so nguyen N: ";
     cin >> N;
 
-    // Phép tính 1: Tính tổng các số lẻ đến N
+    // Phép tính 1: 
     int S1 = 0;
-    for (int i = 1; i <= N; i += 2) {
+    int i = 1;
+    while (i <= N) {
         S1 += i;
+        i += 2; 
     }
+    cout << "Phep tinh 1: S1 = " << S1 << endl;
 
-    // Phép tính 2: Tính tổng các số chẳn đến N
+
+    // Phép tính 2: 
     int S2 = 0;
-    for (int i = 2; i <= N; i += 2) {
+    i = 2;
+    while (i <= N) {
         S2 += i;
+        i += 2; 
     }
+    cout << "Phep tinh 2: S2 = " << S2 << endl;
 
-    // Phép tính 3: Tính tổng bình phương các số đến N
+
+    // Phép tính 3: 
     int S3 = 0;
-    for (int i = 1; i <= N; i++) {
+    i = 1;
+    while (i <= N) {
         S3 += i * i;
+        i++; 
     }
+    cout << "Phep tinh 3: S3 = " << S3 << endl;
 
-    // Phép tính 4: Tính tổng các số đến N theo cấu trúc
-    int S4 = 0;
-    int dau = 1;
-    for (int i = 1; i <= N; i++) {
-        S4 += dau * i;
-        dau *= -1; // Đảo dấu sau mỗi lần lặp
-    }
-
-    // Hiển thị kết quả
-    cout << "Phép tính 1: S1 = " << S1 << endl;
-    cout << "Phép tính 2: S2 = " << S2 << endl;
-    cout << "Phép tính 3: S3 = " << S3 << endl;
-    cout << "Phép tính 4: S4 = " << S4 << endl;
 
     return 0;
 }
