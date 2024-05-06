@@ -49,21 +49,6 @@ int main()
 	cout << endl << "Tim kiem gia tri am : ";
 	for (int i = 0; i < 15; i++)
 	{
-		/*if (num[i] < 0)
-		{
-			cout << num[i] << "; ";
-		}
-		else if (num[i] < 0)
-		{
-			num[i] = 0;
-			cout << "Thay the gia tri am = 0 : " << num[i] << "; ";
-		}*/
-		/*cout << (num[i] >= 0) ? num[i] : 0 ;
-		if (i < 14)
-		{
-			cout << ", ";
-		}*/
-
 		if (num[i] > 0) 
 		{
 			cout << num[i];
