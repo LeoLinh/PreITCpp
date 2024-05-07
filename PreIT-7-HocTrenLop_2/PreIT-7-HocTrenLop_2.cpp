@@ -31,6 +31,11 @@ void HoanVi(int& a, int& b)
     b = temp;
 }
 
+void BubbleSort(int Soluong, int Arr[])
+{
+    
+}
+
 int main()
 {
     int n = 10;
