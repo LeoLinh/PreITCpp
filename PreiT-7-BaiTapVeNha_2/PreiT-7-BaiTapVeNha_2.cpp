@@ -57,10 +57,8 @@ int main()
     }
     cout << endl;
 
-    // Yêu cầu 4 : Tính số cân nặng trung bình của các ứng viên đạt tiêu chuẩn
-    cout << "Yeu cau 4 :" << endl;
-
-    float kgTrungBinh = 
+    // Yêu cầu 4 : Chưa làm được
+    
 
 
     return 0;
