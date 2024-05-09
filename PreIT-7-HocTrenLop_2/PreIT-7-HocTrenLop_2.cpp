@@ -1,52 +1,75 @@
-// PreIT-7-HocTrenLop_2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
-
 using namespace std;
 
-void NhapMang(int& Soluong, int Arr[])
-{
-    for (int i = 0; i < Soluong; i++ )
+const int MAX_SIZE = 10;
+int SoLuong = 9;
+int Mang[MAX_SIZE] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+void AddValue(int value, int pos) {
+    if (SoLuong < MAX_SIZE && pos >= 0 && pos <= SoLuong) {
+        for (int i = SoLuong; i > pos; i--) {
+            Mang[i] = Mang[i - 1];
+        }
+        Mang[pos] = value;
+        SoLuong++;
+    }
+    else {
+        cout << "Khong the them gia tri vao vi tri chi dinh." << endl;
+    }
+    //Mang[pos] = value;
+    /*int temp=0;
+    for (int i = 0;i <= MAX_SIZE;i++)
     {
-        cout << "Nhap phan tu" << i << " = ";
-        cin >> Arr[i];
+        if (i == pos) {
+            temp = Mang[i];
+            Mang[pos] = value;
+        }
+        else {
+            if (temp != 0) {
+                Mang[i] = temp;
+            }
+            else {
+                Mang[i] = Mang[i - 1];
+            }
+            SoLuong++;
+        }
+    }*/
+}
+
+void RemoveValue(int pos) {
+    if (pos >= 0 && pos < SoLuong) {
+        for (int i = pos; i < SoLuong - 1; i++) {
+            Mang[i] = Mang[i + 1];
+        }
+        SoLuong--;
+    }
+    else {
+        cout << "Vi tri khong hop le." << endl;
     }
 }
 
-void XuatMang(int Soluong, int Arr[])
-{
-    for (int i = 0; i < Arr[i]; i++)
-    {
-        cout << Arr[i] << "; ";
+void OutputArray() {
+    cout << "Mang hien tai: ";
+    for (int i = 0; i < SoLuong; i++) {
+        cout << Mang[i] << " ";
     }
     cout << endl;
 }
 
-void HoanVi(int& a, int& b)
-{
-    int temp;
-    temp = a;
-    a = b;
-    b = temp;
+int main() {
+    int giaTri, viTri;
+    cout << "Nhap gia tri can them: ";
+    cin >> giaTri;
+    cout << "Nhap vi tri can them: ";
+    cin >> viTri;
+
+    AddValue(giaTri, viTri);
+    OutputArray();
+
+    cout << "Nhap vi tri phan tu can xoa (vi tri dau tien la 0): ";
+    cin >> viTri;
+    RemoveValue(viTri);
+    OutputArray();
+
+    return 0;
 }
-
-void BubbleSort(int Soluong, int Arr[])
-{
-    
-}
-
-int main()
-{
-    int n = 10;
-    int mang[100];
-    NhapMang(n, mang);
-    XuatMang(n, mang);
-
-    int a = 1, b = 2;
-    cout << "Truoc khi hoan vi: a = " << a << ", b = " << b << endl;
-    HoanVi(a, b);
-    cout << "Sau khi hoan vi: a = " << a << ", b = " << b << endl;
-
-}
-
