@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void NhapMang(int& Soluong, int Arr[])
+void NhapMang(int Soluong, int Arr[])
 {
 	for (int i = 0; i < Soluong; i++)
 	{
