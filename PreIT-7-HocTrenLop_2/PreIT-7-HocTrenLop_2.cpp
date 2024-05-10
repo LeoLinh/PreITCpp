@@ -7,7 +7,8 @@ int Mang[MAX_SIZE] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
 void AddValue(int value, int pos) {
     if (SoLuong < MAX_SIZE && pos >= 0 && pos <= SoLuong) {
-        for (int i = SoLuong; i > pos; i--) {
+        for (int i = SoLuong; i > pos; i--) 
+        {
             Mang[i] = Mang[i - 1];
         }
         Mang[pos] = value;
@@ -16,24 +17,6 @@ void AddValue(int value, int pos) {
     else {
         cout << "Khong the them gia tri vao vi tri chi dinh." << endl;
     }
-    //Mang[pos] = value;
-    /*int temp=0;
-    for (int i = 0;i <= MAX_SIZE;i++)
-    {
-        if (i == pos) {
-            temp = Mang[i];
-            Mang[pos] = value;
-        }
-        else {
-            if (temp != 0) {
-                Mang[i] = temp;
-            }
-            else {
-                Mang[i] = Mang[i - 1];
-            }
-            SoLuong++;
-        }
-    }*/
 }
 
 void RemoveValue(int pos) {
