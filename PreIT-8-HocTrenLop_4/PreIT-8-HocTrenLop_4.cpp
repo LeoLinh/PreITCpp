@@ -28,7 +28,7 @@ int TongHieuXenKe(int n, int m = 1)
 	{
 		if (n % 2 == 0)
 		{
-			return -n + TongSo(n - 1);
+			return -n + TongHieuXenKe(n - 1);
 		}
 		else
 		{
