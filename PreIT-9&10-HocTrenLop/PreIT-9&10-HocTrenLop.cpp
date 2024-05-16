@@ -8,7 +8,20 @@ using namespace std;
 
 int KiemTraTonTai(char c, string str)
 {
+    if (!isalpha(c) && !isdigit(c))
+    {
+        return 0;
+    }
 
+    int len = str.length();
+    for (int i = 0; i < len; i++)
+    {
+        if (c == str[i])
+        {
+            return 1;
+        }
+    }
+    return 0;
 }
 
 int main()
