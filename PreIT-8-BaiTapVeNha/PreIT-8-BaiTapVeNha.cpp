@@ -5,46 +5,107 @@
 
 using namespace std;
 
-bool KiemTraSNT(int N) {
-    if (N <= 1) return false;
-    if (N <= 3) return true;
-    if (N % 2 == 0 || N % 3 == 0) return false;
-    for (int i = 5; i <= sqrt(N); i += 6) 
-    {
-        if (N % i == 0 || N % (i + 2) == 0) return false;
-    }
-    return true;
-}
+//int NhapSoNguyenDuong()
+//{
+//    int n;
+//    cout << "Nhap so Nguyen duong : ";
+//    cin >> n;
+//    return n;
+//}
+//
+//int KiemTraSNT(int n)
+//{
+//    if (n <= 1)
+//    {
+//        return 0;
+//    }
+//    for (int i = 2; i <= sqrt(n); i++)
+//    {
+//        if (n % i == 0)
+//        {
+//            return 0;
+//        }
+//    }
+//    return 1;
+//}
+//
+//int LietKeSNT(int n)
+//{
+//    for (int i = 2; i < n; i++)
+//    {
+//        if (KiemTraSNT(i) == 1)
+//        {
+//            cout << i << "; ";
+//        }
+//    }
+//    return 0;
+//}
+//
+//int main() 
+//{
+//    int n = NhapSoNguyenDuong();
+//
+//    if (KiemTraSNT(n) == 0)
+//    {
+//        cout << "N khong phai la so nguyen to" << endl;
+//    }
+//    else
+//    {
+//        cout << "N la so nguyen to " << endl;
+//        cout << "Cac so nguyen to nho hon : " << n << " La : ";
+//        LietKeSNT(n);
+//    }
+//
+//    return 0;
+//}
 
-
-void LietKeSNT(int N) 
+// Đệ quy
+bool KiemTraSNT(int n, int i = 2) 
 {
-    for (int i = 2; i < N; i++) 
+    if (n <= 2) 
     {
-        if (KiemTraSNT(i)) 
-        {
-            cout << i << "; ";
-        }
+        return (n == 2);
     }
-    cout << endl;
+    if (n % i == 0) 
+    {
+        return false;
+    }
+    if (i <= sqrt(n)) 
+    {
+        return true;
+    }
+    return KiemTraSNT(n, i + 1);
 }
 
-int main() {
-    int N;
-    cout << "Nhap so nguyen duong N: ";
-    cin >> N;
-
-    if (KiemTraSNT(N)) 
+void LietKeSNT(int n, int current = 2) 
+{
+    if (current >= n) 
     {
-        cout << N << " la so nguyen to." << endl;
-        cout << "Cac so nguyen to nho hon " << N << " la: ";
-        LietKeSNT(N);
+        return;
+    }
+    if (KiemTraSNT(current)) 
+    {
+        cout << current << "; ";
+    }
+    LietKeSNT(n, current + 1);
+}
+
+int main() 
+{
+    int n;
+    cout << "Nhap so Nguyen duong: ";
+    cin >> n;
+
+    if (KiemTraSNT(n)) 
+    {
+        cout << "N la so nguyen to" << endl;
+        cout << "Cac so nguyen to nho hon " << n << " la: ";
+        LietKeSNT(n);
     }
     else 
     {
-        cout << N << " khong phai la so nguyen to." << endl;
+        cout << "N khong phai la so nguyen to" << endl;
     }
 
     return 0;
 }
-
