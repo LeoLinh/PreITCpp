@@ -6,32 +6,28 @@
 using namespace std;
 
 
+
 int main()
 {
-	// Bài 6 :
+	// Bài 2 :
 
-	int n;
-	cout << "Nhap gia tri n : ";
-	cin >> n;
-	
-	
+	int canh_a, canh_b;
+	cout << "Nhap canh a : ";
+	cin >> canh_a;
+	cout << "Nhap canh b : ";
+	cin >> canh_b;
 
-	if (n < 0)
+	if (canh_a <= 0 || canh_b <= 0)
 	{
-		cout << "Gia tri khong hop le";
+		cout << "Cac canh phai la so duong";
 		return 1;
 	}
 
-	int tong = 0;
-	int dem = 1;
+	int s = canh_a * canh_b;
+	int P = (canh_a + canh_b) * 2;
 
-	while (dem <= n)
-	{
-		tong = tong + dem;
-		dem = dem + 1;
-	}
-	
-	cout << "Ket qua : " << tong;
+	cout << "Dien tich hinh chu nhat la : " << s << endl;
+	cout << "Chu vi hinh chu nhat la : " << P << endl;
 
 
 	return 0;
