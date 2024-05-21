@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -9,26 +10,17 @@ using namespace std;
 
 int main()
 {
-	// Bài 2 :
+	// Bài \1 : 
 
-	int canh_a, canh_b;
-	cout << "Nhap canh a : ";
-	cin >> canh_a;
-	cout << "Nhap canh b : ";
-	cin >> canh_b;
+	float x;
+	cout << "Nhap so x : ";
+	cin >> x;
 
-	if (canh_a <= 0 || canh_b <= 0)
-	{
-		cout << "Cac canh phai la so duong";
-		return 1;
-	}
+	float luyThua = pow(x, 3);
+	float canBac2 = sqrt(x);
 
-	int s = canh_a * canh_b;
-	int P = (canh_a + canh_b) * 2;
-
-	cout << "Dien tich hinh chu nhat la : " << s << endl;
-	cout << "Chu vi hinh chu nhat la : " << P << endl;
-
+	cout << "Luy thua cua : " << x << " La = " << luyThua << endl;
+	cout << "Can bac 2 cua : " << x << " La = " << canBac2 << endl;
 
 	return 0;
 }
