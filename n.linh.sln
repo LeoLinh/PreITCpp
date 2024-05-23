@@ -73,6 +73,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PreIT-11-HocTrenLop", "PreI
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PreIT-11-HocTrenLop_2", "PreIT-11-HocTrenLop_2\PreIT-11-HocTrenLop_2.vcxproj", "{B3C02734-843B-409B-8C2C-BC82E03F393E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PreIT-11-BaiTapVeNha", "PreIT-11-BaiTapVeNha\PreIT-11-BaiTapVeNha.vcxproj", "{3BC16B1C-D828-4B80-9C29-DF6B20D54B0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -361,6 +363,14 @@ Global
 		{B3C02734-843B-409B-8C2C-BC82E03F393E}.Release|x64.Build.0 = Release|x64
 		{B3C02734-843B-409B-8C2C-BC82E03F393E}.Release|x86.ActiveCfg = Release|Win32
 		{B3C02734-843B-409B-8C2C-BC82E03F393E}.Release|x86.Build.0 = Release|Win32
+		{3BC16B1C-D828-4B80-9C29-DF6B20D54B0A}.Debug|x64.ActiveCfg = Debug|x64
+		{3BC16B1C-D828-4B80-9C29-DF6B20D54B0A}.Debug|x64.Build.0 = Debug|x64
+		{3BC16B1C-D828-4B80-9C29-DF6B20D54B0A}.Debug|x86.ActiveCfg = Debug|Win32
+		{3BC16B1C-D828-4B80-9C29-DF6B20D54B0A}.Debug|x86.Build.0 = Debug|Win32
+		{3BC16B1C-D828-4B80-9C29-DF6B20D54B0A}.Release|x64.ActiveCfg = Release|x64
+		{3BC16B1C-D828-4B80-9C29-DF6B20D54B0A}.Release|x64.Build.0 = Release|x64
+		{3BC16B1C-D828-4B80-9C29-DF6B20D54B0A}.Release|x86.ActiveCfg = Release|Win32
+		{3BC16B1C-D828-4B80-9C29-DF6B20D54B0A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
